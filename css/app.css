@@ -42,18 +42,19 @@ body{
     background-color: #808080;
 }
 
-#main-section {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-}
-
 #ipad {
+    position: relative;
     width: 1024px;
     aspect-ratio: 1024 / 690;
     border-radius: 1rem;
     border: 2px solid #6D6D6D;
     background-color: #ffffff;
+}
+
+#main-section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -64,4 +65,3 @@ body{
         margin-bottom: 1rem;
     }
 }
-
