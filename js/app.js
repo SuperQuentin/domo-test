@@ -48,8 +48,6 @@ const drop = (event) => {
 
   draggable.id = "icon-" + event.currentTarget.childElementCount + 1;
   draggable.removeAttribute("draggable");
-  draggable.removeEventListener("dragstart");
-  draggable.removeEventListener("dragend");
 
   const rect = ipad.getBoundingClientRect();
 
