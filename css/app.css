@@ -8,6 +8,7 @@ body{
 }
 
 .sidebar{
+    position: relative;
     width: 100px;
     height: 100vh;
     display: flex;
@@ -21,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 75ms;
+    z-index: 1;
 }
 
 .btn > img {
@@ -44,6 +45,7 @@ body{
 
 #ipad {
     position: relative;
+    display: flex;
     width: 1024px;
     aspect-ratio: 1024 / 690;
     border-radius: 1rem;
@@ -59,8 +61,7 @@ body{
 
 @media screen and (max-width: 1024px) {
     #ipad {
-        width: initial;
-        height: 90%;
+        width: 60vw;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
